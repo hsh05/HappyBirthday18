@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Balloons</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="content">
+    <h1>Happy Birthday Jana ♥</h1>
+    <p>Happy birthday!!!! You don't know how happy I am for you, and I just wish I could be there to celebrate every second of that day with you.</p>
+    <p>I'm glad to be with you during this day and every other day because you deserve all of the love. You genuinely deserve the greatest birthday party even if you were unlucky to be born in midterms season 😇</p>
+    <p>I just hope that my prettiest, most gorgeous, stunning girl enjoys her birthday and nothing makes her sad during it because it's all about you today. It's your special day.</p>
+    <p>I love you so so much, and I'll keep always spoiling you on your birthdays, even when we're so far away from each other because you deserve it.</p>
+    <p>I genuinely love you so much and can't wait to celebrate days like these with you by my side, preferably married as well 💕</p>
+  </div>
+
+  <div class="balloons">
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+  </div>
+
+  <script>
+    // Balloons animation
+    window.onload = function() {
+      const balloons = document.querySelectorAll('.balloon');
+      balloons.forEach(balloon => {
+        const randomDelay = Math.random() * 5; // Random delay between 0 and 5 seconds
+        const randomDuration = Math.random() * 10 + 5; // Random duration between 5 and 15 seconds
+        balloon.style.animationDelay = `${randomDelay}s`;
+        balloon.style.animationDuration = `${randomDuration}s`;
+      });
+    };
+  </script>
+</body>
+</html>
